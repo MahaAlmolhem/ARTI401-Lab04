@@ -1,4 +1,4 @@
-ARTI401 – Lab 4
+ Lab 4
 Task 2 – Prolog Queries and Answers
 
 1. Show the names of all females.
