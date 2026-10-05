@@ -1,4 +1,4 @@
-ARTI 303 – Lab 4: Variables in Prolog
+Lab 4: Variables in Prolog
 Task 1 – Unification Queries
 
 1. Query:
