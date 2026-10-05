@@ -1,0 +1,105 @@
+ARTI 303 – Lab 4: Variables in Prolog
+Task 1 – Unification Queries
+
+1. Query:
+?- house = house.
+
+Result:
+true.
+
+Explanation:
+The terms can be unified because both are the same atom.
+
+
+2. Query:
+?- house = abc.
+
+Result:
+false.
+
+Explanation:
+The terms cannot be unified because house and abc are different atoms.
+
+
+3. Query:
+?- edge(a,b) = edge(C,b).
+
+Result:
+C = a.
+
+Explanation:
+The terms can be unified because they have the same functor and arguments. C is unified with a.
+
+
+4. Query:
+?- edge(a,d) = edge(C,B).
+
+Result:
+C = a,
+B = d.
+
+Explanation:
+The terms can be unified by assigning C = a and B = d.
+
+
+5. Query:
+?- edge(C,B) = edge(a,d).
+
+Result:
+C = a,
+B = d.
+
+Explanation:
+The terms can be unified by assigning C = a and B = d.
+
+
+6. Query:
+?- edge(A,f(g,h)) = edge(a,B).
+
+Result:
+A = a,
+B = f(g,h).
+
+Explanation:
+The terms can be unified by assigning A = a and B = f(g,h).
+
+
+7. Query:
+?- edge(A,A) = edge(b,c).
+
+Result:
+false.
+
+Explanation:
+The terms cannot be unified because A would have to be both b and c, but the same variable must have the same value.
+
+
+8. Query:
+?- edge(A,A) = edge(b,b).
+
+Result:
+A = b.
+
+Explanation:
+The terms can be unified because both occurrences of A can have the same value b.
+
+
+9. Query:
+?- A = B, B = f.
+
+Result:
+A = B,
+B = f.
+
+Explanation:
+The terms can be unified because A is unified with B, and B is unified with f.
+
+
+10. Query:
+?- A = B, B = f, A = e.
+
+Result:
+false.
+
+Explanation:
+The terms cannot be unified because A and B must have the same value. B is unified with f, while A is required to be e.
